@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmigo - AI Plant Disease Assistant</title>
+    {% load static %}
+    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{% static "images/farm-bg.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .about-section, .chatbot-section, .contact-section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .about-section h2, .chatbot-section h2, .contact-section h2 {
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            height: 500px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Farmigo</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Farmigo</h1>
+            <p>Your AI-powered assistant for plant disease identification and agricultural guidance</p>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2>About Farmigo</h2>
+        <div class="about-content">
+            <p>Farmigo uses advanced AI technology to help farmers identify plant diseases and provide expert agricultural advice. Upload photos of your plants or describe symptoms to get instant analysis and recommendations.</p>
+            <p>This application is developed by the students of KLH University.</p>
+            <p>We aim to empower farmers with the knowledge and tools they need to maintain healthy crops and maximize yields.</p>
+            <p>Our AI model is trained on a vast dataset of plant diseases and agricultural practices, ensuring accurate and reliable results.</p>
+        </div>
+    </section>
+
+    <section id="creators" class="about-section">
+        <h2>Creators of Farmigo and FarmBoy</h2>
+        <div class="about-content">
+            <p>Donkeshwaram Rohan: Protege at KLH University and Intern at FastIOT as AI&Data Engineer</p>
+            <p>Sunkara Vivek: Protege at KLH University and ML Engineer</p>
+            <p>Phani Teja: Protege at KLH University and Full Stack Developer</p>
+            <p>Gopala Krishna: Protege at KLH University and Data Analyst.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Farmigo. All rights reserved. Contact Us at rohand1208@gmail.com</p>
+    </footer>
+
+    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/04/05/21/20250405211322-UA22YLLA.js"></script>
+
+    <script src="https://files.bpcontent.cloud/2025/04/05/12/20250405123515-YLJSJUWG.js"></script>
+</body>
+</html>
